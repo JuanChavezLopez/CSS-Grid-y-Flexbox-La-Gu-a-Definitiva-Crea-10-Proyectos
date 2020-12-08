@@ -1,0 +1,115 @@
+/** Media Queries **/
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.pagina {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+}
+
+.header .nombre-sitio {
+  flex: 0 0 5rem;
+  background-color: #003f8c;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .nombre-sitio {
+    flex: 0 0 20rem;
+  }
+}
+
+.header .nombre-sitio h1 {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.header .nombre-sitio .escritorio {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .nombre-sitio .escritorio {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header .nombre-sitio .movil {
+    display: none;
+  }
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  background-color: #005b9f;
+}
+
+.barra .menu-izquierdo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.barra .menu-derecho {
+  display: flex;
+}
+
+.barra .menu-derecho .caja {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.barra .menu-derecho .caja:hover {
+  background-color: #004c86;
+}
+
+.barra .menu-derecho .caja a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.barra .menu-derecho .caja a span {
+  background-color: #009045;
+  border-radius: 50%;
+  padding: .5rem;
+  margin-left: .5rem;
+}
+
+.contenedor-principal {
+  flex: 1;
+}
