@@ -6,6 +6,11 @@ h2 {
     border: 3px solid black;
     height: 300px;
     display: grid;
+    /* grid-template-columns: 33.3% 33.3% 33.3%; */
+    /* grid-template-columns: 50% repeat(2, 25%);
+    grid-template-rows: repeat(2, 50%); */
+
+    grid: repeat(3,50%) / repeat(2, 10% 40%);
 }
 
 .servicio {

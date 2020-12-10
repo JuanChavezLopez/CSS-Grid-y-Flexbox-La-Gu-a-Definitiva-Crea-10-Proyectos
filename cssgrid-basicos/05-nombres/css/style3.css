@@ -59,33 +59,54 @@ img {
 }
 
 
+/*  todo:******** CSS FOR CAR *****/
 
 .contenedor-media {
     margin: 0 auto;
     max-width: 800px;
     display: grid;
     grid-template-areas: 
-        " titulo titulo titulo titulo"
-        " imagen  desc desc desc";
-    grid-gap: 1rem;
-    grid-template-columns: 20% 80%;
+        "titulo"
+        "slogan"
+        "info"
+        "imagen"
+        "entrada";
+
+    grid-gap: .5rem;
+
 }
 
+@media screen and (min-width: 768px) {
+    .contenedor-media{
+        grid-template-areas: 
+            "titulo titulo"
+            "imagen slogan"
+            "imagen info"
+            "entrada entrada";
+        
+            grid-template-columns: 50% 50%;
+    }
+}
 
 .titulo {
-   grid-area: titulo;
+    grid-area: titulo;
 }
 
 .slogan {
+    grid-area: slogan;
+
 }
 
 .imagen {
     grid-area: imagen;
+
 }
 
 .info {
-    grid-area: desc;
+    grid-area: info;
+
 }
 
 .entrada {
+    grid-area: entrada;
 }

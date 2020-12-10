@@ -23,9 +23,25 @@ h2 {
 
     grid-template-columns: 30% 30%;
 
-    justify-content: flex-end;
+    /* todo: alinear */
+    align-items: flex-start;
+    align-items: center;
+    align-items: flex-end;
+    align-items: initial;
+    align-items: stretch;
+    /* align-content: flex-start;
+    align-content: flex-end; */
+
+    /* todo: justfy-content */
+    justify-content: end;
     justify-content: center;
-    justify-content: flex-start;
+    justify-content: start;
+    justify-content: space-around;
+    justify-content: space-between;
+
+
+
+
 }
 
 .servicio {
