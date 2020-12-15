@@ -106,7 +106,7 @@ blockquote {
 
 /**todo:--------------- Grid aqui -------------*/
 
-.navegacion nav{
+.navegacion nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -137,6 +137,7 @@ blockquote {
     .imagen2{
             grid-row: 4/5;
     }
+
     .entrada{
         grid-column: 2/3;
         grid-row: 2/5;

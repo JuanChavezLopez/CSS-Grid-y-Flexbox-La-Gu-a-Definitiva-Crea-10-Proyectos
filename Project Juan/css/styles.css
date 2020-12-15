@@ -1,0 +1,381 @@
+/* todo: ------CUSTOM PROPERTIES---------------- */
+
+:root{
+    --fuente-principal: 'Rubik Mono One', sans-serif;
+    --fuente-secundaria: 'Lato', sans-serif;
+    --primario: #25242F;
+    --secundario: #2F2E3A;
+    --claro: #ffffff;
+    --texto: #a6a6ad;
+    --hover:  rgb(202, 34, 202);
+
+}
+
+/* todo: ------------GLOBAL VARIABLES---------- */
+
+html{
+    box-sizing: border-box;
+}
+
+.title{
+    font-family: var(--fuente-principal);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title p:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+
+body{
+    font-family: var(--fuente-secundaria);
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    color: var(--claro);
+}
+
+h1{
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+/* todo: ------------INTERFACE---------- */
+
+body {
+    background-color: var(--primario);
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto; /* we center the containerss  */
+}
+
+.hero{
+    height: 8vh; /* le damos todo el espacio dsponible */
+    background-color: var(--primario);
+    color: var(--claro);
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--claro);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo a:hover{
+    color: var(--hover);
+}
+
+.header-footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    align-items: center;
+    width: 100%; /* we give you all the available space */
+    padding-top: 1rem;
+}
+
+.navegacion a {
+    color: var(--claro);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+
+/* quitamos el margen derecho al ultimo elemento a */
+.navegacion a:last-of-type{
+    margin-right: 0;
+}
+
+.navegacion a:hover{
+    color: var(--hover);
+}
+
+/* todo:------------ GROW YOUR ---------------- */
+
+.grow-your{
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+}
+
+@media screen and (min-width: 768px) {
+    .grow-your{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+        grid-template-columns: 45% auto 45%;
+        column-gap: 1rem;
+        margin-bottom: 7rem;
+    }
+}
+
+.categories{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    column-gap: 1rem;
+}
+
+.grow-your .message p{
+    line-height: 150%;
+}
+
+
+.categories .development{
+    height: 15vh;
+    background-color: var(--secundario);
+    border-radius: 10px;
+    padding-top: 2rem;
+    padding-left: 1rem;    
+}
+
+
+.categories .development:hover{
+    background-color: rgb(202, 34, 202);
+    cursor: pointer;
+}
+
+.development .name{
+    line-height: 20%;
+}
+
+.development .projects{
+    padding-top: 10px;
+    color: var(--texto);
+    font-size: 13px;
+}
+
+
+.grow-your .modulo1 .message p{
+    color: var(--texto);
+}
+.grow-your .modulo2 .message p{
+    color: var(--texto);
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.scroll-down{
+    height: auto;
+    display: flex;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    justify-content: center;
+    
+}
+
+.scroll-down .fa-arrow-up:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+.scroll-down .fa-arrow-up{
+    padding: 1rem;
+}
+
+.modulo2 .boton input{
+    padding: 1rem 2.5rem;
+}
+
+.modulo2 .boton input:hover{
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+/* todo:------------ BEST-CHOICE---------------- */
+
+.best-choice{
+    
+    /* margin-right: 1rem;
+    margin-left: 1rem; */
+}
+
+@media screen and (min-width: 768px) {
+    .best-choice{
+        display: grid ;
+        grid-template-columns: 45% 10% 45%;
+        margin-bottom: 5rem;
+    }
+}
+    
+
+
+.best-choice .message{
+    padding: 1rem;
+}
+
+.best-choice .message p{
+    color: var(--texto);
+    line-height: 150%;
+}
+
+.best-choice .modulo2 .title p{
+    
+    margin-top: 1rem;
+    line-height: 20%;
+}
+
+.best-choice .modulo2 .image-contact .image{
+    position: relative;
+    display: inline-block;
+
+}
+
+.best-choice .modulo2 .image-contact .image .boton{
+    position: absolute;
+    right: 40px;
+    bottom: 3px;
+}
+
+/* todo:------------ TEXT STUDENTS---------------- */
+.text-students{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+}
+
+.text-students .description p{
+    margin-top: 4rem;
+    line-height: 150%;
+    white-space: pre-line;
+    text-align: left;
+    color: var(--texto);
+}
+
+.text-students .title{
+    text-align: right;
+    margin-right: 1rem;
+}
+
+
+/* todo:------------ OUR WORK PROCESS ---------------- */
+
+.our-work{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.our-work .cards .message p{
+    color: var(--texto);
+    line-height: 200%;
+
+}
+
+.our-work{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 530px));
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.our-work .cards .title2{
+    background-color: var(--secundario);
+    font-family: var(--fuente-principal);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.our-work .cards .title2 p{
+    /* margin-top: 20rem 0 4rem 0 ; */
+    font-size: 20px;
+    
+}
+
+/* todo:------------ OUR GREAT TEAMS---------------- */
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    background-color: var(--primario);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.info .categoria{
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.info .name{
+    color: var(--claro);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info .name:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+
+.info .titulo{
+    color: var(--texto);
+    font-size: 16px;
+}
+
+
+
+/* todo:------------ READY TO ---------------- */
+
+.contenido-message{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    padding-bottom: 5rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+   
+}
+
+.contenido-message .contact{
+    margin-top:3rem;
+    font-size: 15px;
+}
+
+.contenido-message .message p{
+    color: var(--texto);
+    padding-bottom: 3rem;
+    line-height: 150%;
+}
+
+.contenido-message .contact .fa-arrow-right:hover{
+    cursor: pointer;
+    color: var(--hover);
+}
+
+
+/* todo:------------ FOOTER---------------- */
+/* belongs to class header-footer */
+
+footer {
+    background-color: var(--secundario);
+    height:40px;
+    padding-bottom: 30px;
+
+}
+
+footer .logo{
+    padding-left: 1rem;
+}
+
+footer .navegacion{
+    padding-right: 1rem;
+}
